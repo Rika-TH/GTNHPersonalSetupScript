@@ -13,9 +13,9 @@ if [[ ! -e ../server.properties ]]; then
 else
     rm JourneyMapServer*
     sed -i 's/eula=false/eula=true/' ../eula.txt
-    sed -i 's/spawn-protection=1/spawn-protection=0' ../server.properties
+    sed -i 's/spawn-protection=1/spawn-protection=0/' ../server.properties
 fi
-sed -i 's/BloodMoonChance=0.01/BloodMoonChance=0' ./config/RandomThings.cfg
+sed -i 's/BloodMoonChance=0.01/BloodMoonChance=0/' ../config/RandomThings.cfg
 # Shared Prospecting (10/05/25)
 wget https://github.com/Lyfts/SharedProspecting/releases/download/2.0.3/sharedprospecting-2.0.3.jar
 # DEconfig menu (23/04/24)
